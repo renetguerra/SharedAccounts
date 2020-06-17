@@ -43,6 +43,7 @@ namespace SharedAccounts.API
             });
             
             services.AddCors();
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddAutoMapper(typeof(SharedAccountsRepository).Assembly);
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<ISharedAccountsRepository, SharedAccountsRepository>();
