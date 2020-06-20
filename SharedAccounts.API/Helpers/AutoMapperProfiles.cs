@@ -30,7 +30,8 @@ namespace SharedAccounts.API.Helpers
             CreateMap<Photo, PhotosForDetailDto>();     
             CreateMap<Photo, PhotoForReturnDto>();
             CreateMap<PhotoForCreationDto, Photo>();
-            CreateMap<UserForUpdateDto, User>();                
+            CreateMap<UserForUpdateDto, User>();         
+            CreateMap<UserForRegisterDto, User>();       
         }
     }
 }
