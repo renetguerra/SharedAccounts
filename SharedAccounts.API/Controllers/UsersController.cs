@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SharedAccounts.API.Data;
 using SharedAccounts.API.Dtos;
+using SharedAccounts.API.Helpers;
 
 namespace SharedAccounts.API.Controllers
 {
+    [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]

@@ -59,6 +59,8 @@ namespace SharedAccounts.API
                         ValidateAudience = false
                     };
                 });
+                
+            services.AddScoped<LogUserActivity>();
 
         }
 
